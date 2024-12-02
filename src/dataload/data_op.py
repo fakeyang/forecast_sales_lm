@@ -15,7 +15,7 @@ from pydantic import BaseModel, Field
 
 class BaseDataOp(BaseModel):
     """
-    
+    数据处理基类
     @param:
     @return:
     """

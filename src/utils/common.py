@@ -20,10 +20,7 @@ import pandas as pd
 # Path
 UTILS_DIR = os.path.dirname(os.path.abspath(__file__))
 SRC_DIR = os.path.dirname(UTILS_DIR)
-if os.path.basename(SRC_DIR) == 'src':
-    PRJ_DIR = os.path.dirname(SRC_DIR)
-else:
-    PRJ_DIR = os.path.dirname(UTILS_DIR)
+PRJ_DIR = os.path.dirname(SRC_DIR)
 
 DATA_DIR = os.path.join(PRJ_DIR, 'data')
 
@@ -32,6 +29,7 @@ DATA_CONF_DIR = os.path.join(CONF_DIR, 'data')
 DATA_OP_CONF_DIR = os.path.join(CONF_DIR, 'data_op')
 MODEL_CONF_DIR = os.path.join(CONF_DIR, 'model')
 MODEL_SEARCH_CONF_DIR = os.path.join(CONF_DIR, 'model_search')
+
 DISPLAY_CONF_DIR = os.path.join(CONF_DIR, 'display')
 AUTO_STRATEGY_CONF_DIR = os.path.join(CONF_DIR, 'auto_strategy')
 BASELINE_CONF_DIR = os.path.join(CONF_DIR, 'baseline')
